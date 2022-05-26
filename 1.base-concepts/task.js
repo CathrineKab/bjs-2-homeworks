@@ -52,5 +52,4 @@ function calculateTotalMortgage (percent, contribution, amount, date) {
 
   return Number (totalAmount.toFixed(2));
   console.log(`Общая сумма по ипотеке составляет ${totalAmount}`);
-      return +totalAmount;
 }
