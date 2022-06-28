@@ -7,12 +7,12 @@ function cachingDecoratorNew(func) {
     const hash = {key, result}; 
     let idx = cache.findIndex((itm) => key === itm.key);
     let newCache = []; 
-  //если элемент наден
+  
   if (idx !== -1){
     console.log("Из кэша: " + cache[idx].result);
     return "Из кэша: " + cache[idx].result;
   } else {
-  //вычисляем значение
+  
   result = func(...args);
   hash.result = result;
   cache.push(hash);
